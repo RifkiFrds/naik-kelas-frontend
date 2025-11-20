@@ -1,4 +1,10 @@
-@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Variabel icomponents css */
+:root {
+  --color-primary: #B7FF40;
+  --color-secondary: #334E69;
+  --color-tertiary: #FF7A00;
+}

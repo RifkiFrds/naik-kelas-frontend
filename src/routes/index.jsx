@@ -9,11 +9,16 @@ export default function index() {
     <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/bussinesservice" element={<BusinessServiceView />} />
+          {/* Rute yang sudah ada */}
+          <Route path="/" element={<HomeView />} />
+          <Route path="/bussinesservice" element={<BusinessServiceView />} />
+          <Route path="/tentang" element={<HomeView />} />
+          <Route path="/kemitraan" element={<HomeView />} />
+          <Route path="/layanan-umum" element={<HomeView />} />
+          <Route path="/karir" element={<HomeView />} />
+          <Route path="/kontak" element={<HomeView />} />
         </Route>
       </Routes>
     </BrowserRouter>
   )
 };
-
