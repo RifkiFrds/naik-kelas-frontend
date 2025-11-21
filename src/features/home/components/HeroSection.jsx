@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 function HeroSection() {
   return (
-    <section className="py-16 md:py-">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
@@ -36,7 +36,7 @@ function HeroSection() {
           {/* Kolom Kanan: Ilustrasi 3D */}
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <img 
-              src="/images/hero.png" 
+              src="/images/hero-home.png" 
               alt="Ilustrasi Pertumbuhan Bisnis" 
               className="w-full max-w-md md:max-w-full object-contain drop-shadow-xl animate-fade-in-up"
             />
