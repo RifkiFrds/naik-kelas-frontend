@@ -22,7 +22,7 @@ function HeroSection() {
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Bersama Naik Kelas, Wujudkan Bisnis <br className="hidden md:block" />
-          yang <span className="text-tertiary">Lebih Hebat.</span>
+          yang <span className="text-primary">Lebih Hebat.</span>
         </h1>
 
         {/* Subtext / Deskripsi */}

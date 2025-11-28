@@ -25,24 +25,9 @@ function Button({
   };
 
   const variants = {
-    primary: `
-      bg-primary text-secondary 
-      hover:opacity-80 
-      active:brightness-90
-      focus:ring-primary
-    `,
-    secondary: `
-      bg-transparent border-2 border-secondary text-secondary 
-      hover:bg-secondary hover:text-white 
-      active:bg-secondary active:opacity-80
-      focus:ring-secondary
-    `,
-    tertiary: `
-      bg-tertiary text-white
-      hover:opacity-80
-      active:brightness-90
-      focus:ring-tertiary
-    `
+    primary: 'bg-primary text-secondary hover:opacity-80 active:brightness-90 focus:ring-primary',
+    secondary: 'bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white active:bg-secondary active:opacity-80 focus:ring-secondary',
+    tertiary: 'bg-secondary text-gray-100 hover:opacity-80 active:brightness-90 focus:ring-tertiary'
   };
 
   const variantStyles = variants[variant] || variants.primary;

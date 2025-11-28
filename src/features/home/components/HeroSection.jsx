@@ -12,7 +12,7 @@ function HeroSection() {
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-secondary leading-tight mb-6">
               Naik Kelas – Solusi Bisnis Terpadu untuk{' '}
-              <span className="text-tertiary">UMKM & Startup</span>
+              <span className="text-primary">UMKM & Startup</span>
             </h1>
             
             <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">

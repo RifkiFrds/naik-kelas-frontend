@@ -7,8 +7,8 @@ function HeroSection() {
         
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
-          Layanan <span className="text-tertiary">Profesional</span> untuk Semua <br className="hidden md:block" />
-          Kebutuhan <span className="text-tertiary">Bisnismu</span>
+          Layanan <span className="text-primary">Profesional</span> untuk Semua <br className="hidden md:block" />
+          Kebutuhan <span className="text-primary">Bisnismu</span>
         </h1>
 
         {/* Subtext / Deskripsi */}

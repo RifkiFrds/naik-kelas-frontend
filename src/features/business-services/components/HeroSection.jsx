@@ -7,7 +7,7 @@ function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
-          Solusi <span className="text-tertiary">Bisnis Terintegrasi</span> untuk UMKM, <br className="hidden md:block" />
+          Solusi <span className="text-primary">Bisnis Terintegrasi</span> untuk UMKM, <br className="hidden md:block" />
           Frenlancer, dan Starup
         </h1>
         

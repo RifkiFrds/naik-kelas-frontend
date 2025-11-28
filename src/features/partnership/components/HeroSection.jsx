@@ -11,7 +11,7 @@ function HeroSection() {
           {/* Kolom Kiri: Teks */}
           <div className="text-center md:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-secondary leading-tight mb-6">
-              Bangun Bisnis Kuliner Lebih Mudah, <span className="text-tertiary">Cepat</span>, dan <span className="text-tertiary">Terarah</span>.
+              Bangun Bisnis Kuliner Lebih Mudah, <span className="text-primary">Cepat</span>, dan <span className="text-primary">Terarah</span>.
             </h1>
             
             <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">

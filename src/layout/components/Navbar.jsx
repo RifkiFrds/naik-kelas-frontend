@@ -9,7 +9,7 @@ function Navbar() {
   // Helper untuk styling NavLink
   const getNavLinkClass = ({ isActive }) =>
     `font-medium transition-colors ${
-      isActive ? 'text-primary' : 'text-secondary hover:text-primary'
+      isActive ? 'text-secondary' : 'text-gray-500 hover:text-secondary'
     }`;
 
   return (
@@ -19,8 +19,8 @@ function Navbar() {
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="bg-primary rounded-lg w-10 h-10 flex items-center justify-center">
-              <span className="text-secondary font-bold text-lg">NK</span>
+            <div className="rounded-lg w-10 h-10 flex items-center justify-center">
+              <img src="/logo.png" alt="" />
             </div>
             <span className="text-secondary font-bold text-xl">Naik Kelas</span>
           </Link>
@@ -38,7 +38,7 @@ function Navbar() {
 
           {/* CTA Desktop */}
           <div className="hidden md:block">
-            <Button variant="primary">Konsultasi Gratis</Button>
+            <Button variant="tertiary">Konsultasi Gratis</Button>
           </div>
 
           {/* Hamburger Menu Mobile */}
