@@ -11,8 +11,8 @@ export default {
       },
       colors: {
         // Warna kustom Anda dipindahkan ke sini
-        primary: '#B7FF40',
-        secondary: '#334E69',
+        primary: '#FFAE19',
+        secondary: '#000B2C',
         tertiary: '#FF7A00',
       },
     },
