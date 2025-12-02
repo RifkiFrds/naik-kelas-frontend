@@ -7,10 +7,12 @@ import PublicServiceView from '../features/public-services/views/PublicServiceVi
 import BusinessServiceView from "../features/business-services/views/BusinessServiceView";
 import PartnershipView from '../features/partnership/views/PartnershipView';
 import CarrersView from '../features/carrers/views/CarrersView';
+import ScrollToTop from '../lib/ScrollToTop';
 
 export default function index() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
           {/* Rute yang sudah ada */}
