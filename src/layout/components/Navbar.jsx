@@ -13,9 +13,9 @@ function Navbar() {
     }`;
 
   return (
-    <header className="bg-gray-100 shadow-sm sticky top-0 z-50">
+    <header className="bg-[#F0F0F0] shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-3">
+        <div className="flex justify-between items-center py-5">
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
@@ -28,7 +28,7 @@ function Navbar() {
           {/* Navigasi Desktop */}
           <nav className="hidden md:flex gap-6">
             <NavLink to="/" className={getNavLinkClass} end>Home</NavLink>
-            <NavLink to="/tentang" className={getNavLinkClass}>Tentang</NavLink>
+            <NavLink to="/tentang" className={getNavLinkClass}>Tentang Kami</NavLink>
             <NavLink to="/bussinesservice" className={getNavLinkClass}>Layanan Bisnis</NavLink>
             <NavLink to="/kemitraan" className={getNavLinkClass}>Kemitraan</NavLink>
             <NavLink to="/layanan-umum" className={getNavLinkClass}>Layanan Umum</NavLink>

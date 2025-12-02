@@ -7,7 +7,7 @@ function MainLayout() {
   return (
     <>
     <Navbar />
-      <main className="min-h-screen p-4 bg-gray-100">
+      <main className="min-h-screen p-4 bg-[#F0F0F0]">
         <Outlet />
       </main>
     <Footer />

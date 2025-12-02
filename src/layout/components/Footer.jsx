@@ -1,126 +1,86 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../../components/ui/Button'; 
-import { Phone, Instagram, Facebook, Twitter } from 'lucide-react'; 
-
-// Helper untuk link footer
-const FooterLink = ({ to, children }) => (
-  <Link 
-    to={to} 
-    className="text-gray-300 hover:text-primary text-sm transition-colors"
-  >
-    {children}
-  </Link>
-);
-
-// Helper untuk ikon sosial
-const SocialIcon = ({ href, children }) => (
-  <a 
-    href={href} 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-gray-400 hover:text-primary transition-colors"
-  >
-    {children}
-  </a>
-);
+import React from "react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Star
+} from "lucide-react";
 
 function Footer() {
   return (
-    // 1. Background menggunakan warna 'secondary' (Navy)
-    <footer className="bg-secondary text-white">
-      <div className="container mx-auto px-4 pt-16 pb-8">
+    <footer className="bg-secondary text-white pt-10 pb-4">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
-        {/* Grid 4 Kolom */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          
-          {/* Kolom 1: Logo & Deskripsi */}
+        {/* Logo Besar */}
+        <div className="flex justify-center md:justify-center">
+          <img
+            src="/logo.png"
+            alt="Naik Kelas"
+            className="w-70 md:w-80 object-contain"
+          />
+        </div>
+
+        {/* Informasi */}
+        <div className="space-y-6 text-center md:text-left">
+
+          {/* Heading */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              {/* Logo Background 'primary' (Lime), Teks 'secondary' (Navy) */}
-              <div className="bg-primary rounded-lg w-10 h-10 flex items-center justify-center">
-                <span className="text-secondary font-bold text-lg">NK</span>
-              </div>
-              <span className="font-bold text-xl">Naik Kelas</span>
-            </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Membantu pelaku usaha dan profesional naik level melalui edukasi, kemitraan, dan solusi digital terintegrasi.
+            <h2 className="text-2xl md:text-3xl font-extrabold leading-snug">
+              Siap naik kelas bersama kami?
+            </h2>
+            <p className="text-primary text-xl md:text-2xl font-bold mt-1">
+              Konsultasi GRATIS untuk semua layanan
             </p>
           </div>
 
-          {/* Kolom 2: Quick Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <nav className="flex flex-col gap-2.5">
-              <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/tentang">Tentang</FooterLink>
-              <FooterLink to="/bussinesservice">Layanan</FooterLink>
-              <FooterLink to="/karir">Karir</FooterLink>
-              <FooterLink to="/kontak">Kontak</FooterLink>
-            </nav>
-          </div>
-
-          {/* Kolom 3: Layanan */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Layanan</h3>
-            <nav className="flex flex-col gap-2.5">
-              <FooterLink to="/layanan/trading">Trading</FooterLink>
-              <FooterLink to="/layanan/reseller">Reseller</FooterLink>
-              <FooterLink to="/layanan/legalitas">Legalitas</FooterLink>
-              <FooterLink to="/layanan/coworking">Coworking Space</FooterLink>
-            </nav>
-          </div>
-
-          {/* Kolom 4: Perusahaan */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Perusahaan</h3>
-            <nav className="flex flex-col gap-2.5">
-              <FooterLink to="/karir">Karir</FooterLink>
-              <FooterLink to="/kontak">Kontak</FooterLink>
-              <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
-              <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
-            </nav>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Bagian Bawah: Copyright, Sosial & CTA */}
-      <div className="border-t border-gray-300/300">
-        <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          
-          {/* Copyright */}
-          <p className="text-gray-400 text-sm order-2 md:order-1 text-center md:text-left">
-            © 2025 Naik Kelas – All Rights Reserved
-          </p>
-
-          {/* Sosial & CTA */}
-          <div className="flex items-center gap-6 order-1 md:order-2">
-            
-            {/* Ikon Sosial */}
-            <div className="flex items-center gap-4">
-              <SocialIcon href="https://whatsapp.com">
-                <Phone size={20} />
-              </SocialIcon>
-              <SocialIcon href="https://instagram.com">
-                <Instagram size={20} />
-              </SocialIcon>
-              <SocialIcon href="https://facebook.com">
-                <Facebook size={20} />
-              </SocialIcon>
-              <SocialIcon href="https://twitter.com">
-                <Twitter size={20} /> {/* Ikon X / Twitter */}
-              </SocialIcon>
+          {/* Contact List */}
+          <div className="space-y-4">
+            <div className="flex items-start gap-3 justify-center md:justify-start">
+              <Mail size={20} className="text-primary" />
+              <p>hello@naikkelas.id</p>
             </div>
-            
-            {/* Tombol CTA menggunakan varian 'tertiary' (Orange) */}
-            <Button variant="tertiary" size="md" rounded="lg">
-              Mulai Konsultasi
-            </Button>
+
+            <div className="flex items-start gap-3 justify-center md:justify-start">
+              <MapPin size={20} className="text-primary" />
+              <p className="max-w-xs">
+                Saicowork Gedung Soho Capital Lt 37, Tanjung Duren, Jakarta Barat,
+                Indonesia
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3 justify-center md:justify-start">
+              <Phone size={20} className="text-primary" />
+              <p>+62 823-4560-0777</p>
+            </div>
           </div>
 
+          {/* Sosial Media */}
+          <div className="flex gap-5 justify-center md:justify-start pt-4 pb-8">
+            <a href="#" className="text-gray-300 hover:text-primary transition">
+              <Instagram size={22} />
+            </a>
+            <a href="#" className="text-gray-300 hover:text-primary transition">
+              <Facebook size={22} />
+            </a>
+            <a href="#" className="text-gray-300 hover:text-primary transition">
+              <Linkedin size={22} />
+            </a>
+            <a href="#" className="text-gray-300 hover:text-primary transition">
+              <Star size={22} /> {/* Glints icon sementara */}
+            </a>
+          </div>
         </div>
       </div>
+
+      {/* Copyright */}
+    <div className="border-t border-white/10">
+    <div className="container mx-auto px-4 py-3 text-center text-gray-400 text-sm">
+      © 2025 Naik Kelas — All Rights Reserved
+    </div>
+  </div>
     </footer>
   );
 }
