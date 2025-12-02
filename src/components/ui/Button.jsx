@@ -13,8 +13,8 @@ function Button({
 
   const sizes = {
     sm: 'py-1 px-4 text-sm',
-    md: 'py-2 px-6 text-base',
-    lg: 'py-3 px-8 text-lg',
+    md: 'py-2.5 px-4 text-base',
+    lg: 'py-4 px-7 text-[15px]',
   };
 
   const roundness = {
@@ -25,9 +25,9 @@ function Button({
   };
 
   const variants = {
-    primary: 'bg-primary text-secondary hover:opacity-80 active:brightness-90 focus:ring-primary',
+    primary: 'bg-primary text-secondary hover:bg-[#E6A935] active:brightness-90 focus:ring-primary',
     secondary: 'bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white active:bg-secondary active:opacity-80 focus:ring-secondary',
-    tertiary: 'bg-secondary text-gray-100 hover:opacity-80 active:brightness-90 focus:ring-tertiary'
+    tertiary: 'bg-secondary text-gray-100 hover:bg-[#0A1A4A] active:brightness-90 focus:ring-secondary'
   };
 
   const variantStyles = variants[variant] || variants.primary;
