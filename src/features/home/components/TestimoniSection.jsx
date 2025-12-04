@@ -33,7 +33,7 @@ export default function TestimoniSection() {
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-secondary text-center">
-          Cerita Nyata dari Mereka
+          Cerita Nyata dari Mereka 
           yang Sudah Naik Kelas
         </h2>
 

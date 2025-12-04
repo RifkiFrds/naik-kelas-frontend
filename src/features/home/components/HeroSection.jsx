@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../../../components/ui/Button';
-import { ArrowRight } from 'lucide-react'; 
 import { FadeInUp } from '../../../lib/motion';
 
 function HeroSection() {
@@ -14,8 +13,8 @@ function HeroSection() {
           {/* Kolom Kiri: Konten Teks */}
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-[2.65rem] font-bold text-secondary leading-[1.25] md:leading-[1.4] mb-8">
-              Naik Kelas – Solusi Bisnis Terpadu untuk{' '}
-              <span className="text-primary font-extrabold">UMKM & Startup</span>
+              ADAKOM Naik Kelas <br/> Solusi Bisnis Terpadu untuk{' '}
+              <span className="text-primary font-extrabold">UMKM & STARTUP</span>
             </h1>
 
             <p className="text-lg md:text-[1rem] text-gray-600 mb-8 max-w-lg leading-relaxed">
@@ -26,7 +25,6 @@ function HeroSection() {
               {/* Tombol Primary dengan Ikon */}
               <Button variant="primary" size="lg" className="flex items-center justify-center gap-2">
                 Konsultasi Gratis Sekarang
-                <ArrowRight size={20} />
               </Button>
 
               {/* Tombol Secondary */}
