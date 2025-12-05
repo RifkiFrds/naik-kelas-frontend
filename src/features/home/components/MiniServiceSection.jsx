@@ -27,7 +27,7 @@ export default function MiniServiceSection() {
               <ServiceCard
                 title={item.judul_bisnis}
                 description={item.deskripsi}
-                image={item.gambar}
+                image={item.gambar_url}
                 urlCta={item.url_cta || "#"}
               />
             </StaggerItem>
