@@ -1,4 +1,4 @@
-import { Briefcase, Building2 } from "lucide-react";
+import { BadgeCheck, Building2 } from "lucide-react";
 import PublicServiceCard from "../components/PublicServiceCard";
 import { FadeInUp, StaggerContainer, StaggerItem } from "../../../lib/motion";
 
@@ -23,7 +23,7 @@ export default function MiniPublicService() {
           
           <StaggerItem>
             <PublicServiceCard
-              icon={<Briefcase size={32} className="text-secondary" />}
+              icon={<BadgeCheck size={32} className="text-secondary" />}
               title="Legalitas & Sertifikasi"
               description="Urus izin usaha, PIRT, NIB, merek dagang, dan BPOM. Harga mulai Rp 1,9 Juta"
             />

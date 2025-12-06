@@ -21,7 +21,7 @@ export default function MiniServiceSection() {
         </FadeInUp>
 
         {/* Cards */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:text-sm gap-6 mt-12">
           {services.map((item, i) => (
             <StaggerItem key={i}>
               <ServiceCard
@@ -29,6 +29,7 @@ export default function MiniServiceSection() {
                 description={item.deskripsi}
                 image={item.gambar_url}
                 urlCta={item.url_cta || "#"}
+                ctaText={item.ctaText}
               />
             </StaggerItem>
           ))}

@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
 
-export default function ServiceCard({ title, description, image, urlCta }) {
+export default function ServiceCard({ title, description, image, urlCta, ctaText }) {
   return (
-    <div className="rounded-xl shadow-md hover:shadow-lg transition-all overflow-hidden border border-gray-200">
+    <div className="rounded-md shadow-md hover:shadow-lg transition-all overflow-hidden border border-gray-200">
       <img
         src={image}
         alt={title}
@@ -24,7 +24,7 @@ export default function ServiceCard({ title, description, image, urlCta }) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-primary px-4 py-2 rounded-lg text-secondary font-medium hover:brightness-110 transition-all"
         >
-          Buka Akun Sekarang
+          {ctaText}
           <ArrowRight size={18} />
         </a>
       </div>

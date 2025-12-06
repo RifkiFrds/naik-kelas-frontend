@@ -1,6 +1,21 @@
 import { useState, useEffect } from "react";
 import { getLayananBisnis } from "../services/layananService";
 
+function getCTAByType(type) {
+  switch (type) {
+    case "trading":
+      return "Buka Akun Sekarang";
+    case "jasa_recruitment":
+      return "Ajukan Jasa Recruitment";
+    case "modal_bisnis":
+      return "Beli Modul Sekarang";
+    case "webinar":
+      return "Daftar Sekarang";
+    default:
+      return "Pelajari Lebih Lanjut"; // fallback
+  }
+}
+
 export function useServiceList() {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,17 +25,15 @@ export function useServiceList() {
       try {
         const data = await getLayananBisnis();
 
-        console.log("API Layanan Bisnis:", data);
+        const list = Array.isArray(data) ? data : data.data || [];
 
-        // Cek apakah data array atau object
-        if (Array.isArray(data)) {
-          setServices(data);
-        } else if (Array.isArray(data.data)) {
-          setServices(data.data);
-        } else {
-          setServices([]); // fallback
-          console.warn("Format API tidak sesuai. Harus array.");
-        }
+        // Tambahkan ctaText berdasarkan tipe
+        const enhanced = list.map((item) => ({
+          ...item,
+          ctaText: getCTAByType(item.type),
+        }));
+
+        setServices(enhanced);
 
       } catch (err) {
         console.error("Error fetch layanan bisnis:", err);
@@ -35,4 +48,3 @@ export function useServiceList() {
 
   return { services, loading };
 }
-
