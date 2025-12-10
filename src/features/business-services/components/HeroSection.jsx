@@ -1,23 +1,27 @@
-import React from 'react'
+import React from "react";
+import { FadeInUp } from "../../../lib/motion";
 
 function HeroSection() {
   return (
-    <section className="bg-[#F3F5F7] py-20 md:py-20">
+    <FadeInUp delay={0.5}>
+    <section className="py-14 md:py-16">
       <div className="container mx-auto px-4 text-center">
 
-        {/* Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
-          Solusi <span className="text-primary">Bisnis Terintegrasi</span> untuk UMKM, <br className="hidden md:block" />
-          Frenlancer, dan Starup
+        {/* Title */}
+        <h1 className="text-3xl md:text-5xl font-extrabold text-secondary leading-tight mb-4">
+          LANGKAH NYATA UNTUK <span className="text-primary">BISNISMU</span> NAIK LEVEL
         </h1>
-        
-        {/* Subtitile Text */}
-        <p className="text-gray-500 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          Pilih layanan bisnis terbaik mulai dari trading, reseller, modul bisnis, hingga kelas digital
+
+        {/* Subtitle */}
+        <p className="text-gray-600 text-sm md:text-lg max-w-6xl mx-auto leading-relaxed">
+          Pilih layanan terbaik mulai dari Trading, Jasa Recruitment, Modul Bisnis,
+          hingga Kelas Digital mingguan.
         </p>
-    </div>
+
+      </div>
     </section>
-  )
+    </FadeInUp>
+  );
 }
 
-export default HeroSection
+export default HeroSection;

@@ -1,20 +1,32 @@
 import { useState, useEffect } from "react";
-import { getLayananBisnis } from "../services/layananService";
+import { getLayananBisnis, getLayananUmum } from "../services/layananService";
 
+/** TITLE + CTA BY TYPE */
 function getCTAByType(type) {
   switch (type) {
-    case "trading":
-      return "Buka Akun Sekarang";
     case "jasa_recruitment":
       return "Ajukan Jasa Recruitment";
     case "modal_bisnis":
       return "Beli Modul Sekarang";
     case "webinar":
       return "Daftar Sekarang";
+    case "workshop":
+      return "Ikuti Workshop";
     default:
-      return "Pelajari Lebih Lanjut"; // fallback
+      return "Pelajari Lebih Lanjut";
   }
 }
+
+/** STATIC TRADING CARD (tidak ambil API) */
+const STATIC_TRADING = {
+  title: "Trading ADAKOM Naik Kelas",
+  description:
+    "Compare Your Broker, 1 Goal 1 Spirit. Bangun karier trading yang aman, legal, dan terarah dengan mitra resmi.",
+  image: "/images/trading.png", 
+  urlCta:
+    "https://wa.me/6282345600777?text=Halo%20saya%20ingin%20membuka%20akun%20trading",
+  ctaText: "Buka Akun Sekarang",
+};
 
 export function useServiceList() {
   const [services, setServices] = useState([]);
@@ -23,21 +35,39 @@ export function useServiceList() {
   useEffect(() => {
     async function load() {
       try {
-        const data = await getLayananBisnis();
+        const bisnis = await getLayananBisnis();
+        const umum = await getLayananUmum();
 
-        const list = Array.isArray(data) ? data : data.data || [];
+        const bisnisList = Array.isArray(bisnis) ? bisnis : bisnis.data || [];
+        const umumList = Array.isArray(umum) ? umum : umum.data || [];
 
-        // Tambahkan ctaText berdasarkan tipe
-        const enhanced = list.map((item) => ({
-          ...item,
-          ctaText: getCTAByType(item.type),
+        /** Filter bisnis: HANYA yang bukan trading */
+        const bisnisFiltered = bisnisList
+          .filter((item) => item.type !== "trading")
+          .map((item) => ({
+            title: item.judul_bisnis,
+            description: item.deskripsi,
+            image: item.gambar_url,
+            urlCta: item.url_cta || "#",
+            ctaText: getCTAByType(item.type),
+          }));
+
+        /** Normalisasi Layanan Umum */
+        const umumNormalized = umumList.map((item) => ({
+          title: item.judul_layanan,
+          description: item.deskripsi,
+          image: item.gambar_url,
+          urlCta: item.url_cta || "#",
+          ctaText: "Pelajari Layanan",
         }));
 
-        setServices(enhanced);
-
+        /** GABUNG: Trading (static) + Bisnis + Umum */
+        setServices([STATIC_TRADING, ...bisnisFiltered, ...umumNormalized]);
       } catch (err) {
-        console.error("Error fetch layanan bisnis:", err);
-        setServices([]);
+        console.error("Error fetch layanan bisnis/umum:", err);
+
+        // minimal tetap tampil card trading
+        setServices([STATIC_TRADING]);
       } finally {
         setLoading(false);
       }

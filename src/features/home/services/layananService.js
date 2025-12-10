@@ -5,12 +5,8 @@ export const getLayananBisnis = async () => {
   return res.data;
 };
 
-// Untuk upload formdata (admin)
-export const createLayananBisnis = async (formData) => {
-  const res = await apiClient.post("/layanan-bisnis", formData, {
-    headers: {
-      "Content-Type": "multipart/form-data",
-    },
-  });
+// Layanan Umum (PUBLIC)
+export const getLayananUmum = async () => {
+  const res = await apiClient.get("/layanan-umum");
   return res.data;
 };

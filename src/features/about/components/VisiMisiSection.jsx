@@ -11,17 +11,13 @@ export default function VisiMisiSection() {
         {/* Header */}
          <div className="text-center max-w-4xl mx-auto mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-secondary">
-            Tentang ADAKOM
+            TENTANG 
           </h2>
           <p className="text-primary font-extrabold text-3xl md:text-4xl mt-2">
-            Naik Kelas
+            ADAKOM NAIK KELAS
           </p>
-          <p className="text-gray-600 mt-6 leading-relaxed text-lg">
-            Naik Kelas adalah platform pengembangan bisnis dan karier yang
-            menghadirkan solusi lengkap dari edukasi, kemitraan, hingga layanan
-            profesional. Kami menjadi jembatan antara pengetahuan dan praktik
-            nyata agar siapa pun bisa berkembang: dari pemula menjadi profesional,
-            dari usaha kecil menjadi brand besar.
+          <p className="text-3xl text-sm text-gray-600 mt-6 leading-relaxed">
+           ADAKOM Naik Kelas adalah platform pengembangan bisnis dan karier yang menghadirkan solusi lengkap dari edukasi, kemitraan, hingga layanan profesional. Kami menjadi jembatan antara pengetahuan dan praktik nyata agar siapa pun bisa berkembang: dari pemula menjadi profesional, dari usaha kecil menjadi brand besar.
           </p>
         </div>
 
