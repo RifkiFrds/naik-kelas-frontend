@@ -33,9 +33,10 @@ export default function TestimoniSection() {
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-secondary text-center">
-          Cerita Nyata dari Mereka 
-          yang Sudah Naik Kelas
+         CERITA NYATA DARI MEREKA YANG SUDAH NAIK KELAS
         </h2>
+
+        <p className="text-gray-500 text-center mt-4 ">Bukti bahwa ilmu & layanan kami benar-benar membantu bisnis berkembang lebih cepat & terarah.</p>
 
         {/* Marquee Wrapper */}
         <div className="relative w-full overflow-hidden mt-12">

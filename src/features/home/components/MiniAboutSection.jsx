@@ -32,10 +32,10 @@ export default function MiniAboutSection() {
 
         {/* Heading */}
         <h2 className="
-          text-3xl md:text-4xl font-extrabold tracking-tight 
+          text-2xl md:text-4xl font-bold tracking-tight 
           text-secondary leading-tight
         ">
-          Naik Kelas, Gerakan <span className="text-primary">Bisnis & Karier</span> Masa Depan
+          ADAKOM NAIK KELAS, GERAKAN <span className="text-primary">BISNIS & KARIER </span> MASA DEPAN
         </h2>
 
         {/* Subtitle */}

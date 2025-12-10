@@ -12,13 +12,13 @@ function HeroSection() {
           
           {/* Kolom Kiri: Konten Teks */}
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-[2.65rem] font-bold text-secondary leading-[1.25] md:leading-[1.4] mb-8">
-              ADAKOM Naik Kelas <br/> Solusi Bisnis Terpadu untuk{' '}
+            <h1 className="text-3xl md:text-[2.65rem] font-bold text-secondary leading-[1.25] md:leading-[1.4] mb-5">
+              ADAKOM NAIK KELAS <br/>  <span className="text-primary font-extrabold">SOLUSI</span> BISNIS TERPADU UNTUK{' '}
               <span className="text-primary font-extrabold">UMKM & STARTUP</span>
             </h1>
 
             <p className="text-lg md:text-[1rem] text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Dari legalitas hingga ekspansi pasar internasional, kami bantu bisnismu tumbuh lebih cepat & terstruktur.
+             Kami hadir mendampingi bisnismu dari pembelajaran hingga pelaksanaan, melalui layanan bisnis yang terintegrasi dan siap digunakan.
             </p>
     
             <div className="flex flex-col sm:flex-row gap-4">
@@ -35,12 +35,15 @@ function HeroSection() {
           </div>
 
           {/* Kolom Kanan: Ilustrasi 3D */}
-          <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            <img 
-              src="/images/hero-home.png" 
-              alt="Ilustrasi Pertumbuhan Bisnis" 
-              className="w-full max-w-md md:max-w-full object-contain drop-shadow-xl animate-fade-in-up"
+          <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
+            <img
+              src="/images/hero-home.png"
+              alt="Ilustrasi Pertumbuhan Bisnis"
+              className="w-full max-w-md md:max-w-full object-contain animate-fade-in-up"
             />
+
+            {/* White gradient fade bottom */}
+            <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#F0F0F0] to-transparent"></div>
           </div>
 
         </div>

@@ -7,7 +7,8 @@ import PublicServiceView from '../features/public-services/views/PublicServiceVi
 import BusinessServiceView from "../features/business-services/views/BusinessServiceView";
 import PartnershipView from '../features/partnership/views/PartnershipView';
 import CarrersView from '../features/carrers/views/CarrersView';
-import ScrollToTop from '../lib/ScrollToTop';
+import ScrollToTop from '../utils/ScrollToTop';
+import ContactPage from '../features/contact/views/ContactPage';
 
 export default function index() {
   return (
@@ -17,12 +18,12 @@ export default function index() {
         <Route element={<MainLayout />}>
           {/* Rute yang sudah ada */}
           <Route path="/" element={<HomeView />} />
-          <Route path="/bussinesservice" element={<BusinessServiceView />} />
+          <Route path="/layanan-bisnis" element={<BusinessServiceView />} />
           <Route path="/tentang" element={<AboutView />} />
           <Route path="/kemitraan" element={<PartnershipView />} />
           <Route path="/layanan-umum" element={<PublicServiceView />} />
           <Route path="/karir" element={<CarrersView />} />
-          <Route path="/kontak" element={<CarrersView />} />
+          <Route path="/kontak" element={<ContactPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
