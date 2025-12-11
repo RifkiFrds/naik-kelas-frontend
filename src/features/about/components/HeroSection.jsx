@@ -4,7 +4,14 @@ import { FadeInUp } from "../../../lib/motion";
 function HeroSection() {
   return (
     <FadeInUp delay={0.3}>
-      <section className="relative flex items-center justify-center h-[40vh] sm:h-[50vh] md:h-[60vh] min-h-[320px] md:min-h-[400px] overflow-hidden w-full">
+      <section className="
+          relative
+          w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]
+          flex items-center -mt-4 sm:-mt-6 md:-mt-4 justify-center
+          h-[40vh] sm:h-[50vh] md:h-[60vh]
+          min-h-[320px] md:min-h-[400px]
+          overflow-hidden
+        ">
 
         {/* Background */}
         <div className="absolute inset-0 z-0">

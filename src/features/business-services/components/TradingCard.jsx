@@ -17,7 +17,7 @@ export default function TradingCard({ broker }) {
         <div className="bg-primary text-primary p-2 rounded-full flex items-center justify-center">
         <Icon className="text-secondary" size={20} />
         </div>
-        <span>{broker.tipe_broker?.toUpperCase()}</span>
+        <span>BROKER {broker.tipe_broker?.toUpperCase()}</span>
       </div>
 
       <p className="text-gray-600 text-sm text-center max-w-md mx-auto">
