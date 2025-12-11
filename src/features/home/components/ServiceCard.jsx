@@ -19,7 +19,6 @@ export default function ServiceCard({ title, description, image, urlCta, ctaText
   {title}
 </h3>
 
-
         <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-4 line-clamp-3">
           {description}
         </p>

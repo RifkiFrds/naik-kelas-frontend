@@ -46,7 +46,7 @@ export default function OverviewSection() {
           </div>
 
           {/* RIGHT: VALUE TEXT */}
-          <div>
+          <div className="mb-[-40px]">
             <p className="text-gray-600 text-sm md:text-base mb-5 max-w-md">
               Kami membangun Naik Kelas dengan nilai dasar yang menjadi budaya kami setiap hari:
             </p>

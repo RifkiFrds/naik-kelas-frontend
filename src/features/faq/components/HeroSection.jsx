@@ -12,7 +12,7 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl leading-[1.25] md:leading-[1.4] font-bold text-secondary leading-tight">
             PERTANYAAN YANG SERING
             <br />
-            <span className="text-primary">DITANYAKAN (FAQ)</span>
+            <span className="text-primary">DIAJUKAN (FAQ)</span>
           </h1>
 
           <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-sm md:text-base">

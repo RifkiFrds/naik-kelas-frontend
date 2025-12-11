@@ -9,34 +9,29 @@ export default function EventHeroSection() {
         <div className="container mx-auto px-4 text-center">
 
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-[1.2] md:leading-[1.3] mb-6 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-[1.2] md:leading-[1.5] mb-6 text-center">
 
         {/* Baris 1 */}
-        TEMUKAN 
-        <span className="text-primary"> EVENT SERU </span> & 
-        <span className="text-primary"> WORKSHOP INTERAKTIF</span>
-
-        <br />
-        <span>BERSAMA </span>
-        {/* Baris 2 dengan highlight */}
-        <PointerHighlight
+            <PointerHighlight
             highlightColor="rgba(255, 193, 7, 0.35)"
             pointerClassName="text-primary"
-            rectangleClassName="rounded-lg bg-white/40 border-primary/40"
-            containerClassName="inline-block py-1 mt-2"
+            rectangleClassName="rounded-lg bg-white/30 border-primary/40"
+            containerClassName="inline-block  py-1 mt-2"
         >
             <span className="text-secondary font-bold">
-            ADAKOM NAIK KELAS
+            EVENT WAJIB IKUT!
             </span>
         </PointerHighlight>
+        
+        <span className="text-primary"> HADIAH BESAR MENANTI </span> JANGAN SAMPAI MENYESAL MELEWATKANNYA!
 
+        <br />
         </h1>
 
 
           {/* Subtitle */}
-          <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-            Ikuti kelas, webinar, workshop, dan program pengembangan profesional 
-            yang dirancang untuk membantu Anda naik level lebih cepat.
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-5xl mx-auto leading-relaxed">
+            Ikuti event, kumpulkan point dan dapatkan hadiahnya. Tumbuh lebih hebat bersama ADAKOM Naik Kelas.
           </p>
 
         </div>

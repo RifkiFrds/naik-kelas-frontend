@@ -10,13 +10,14 @@ export default function FaqCtaSection() {
           Masih Butuh Bantuan?
         </h2>
 
-        <p className="text-gray-700 mt-3 max-w-xl mx-auto">
+        <p className="text-gray-700 mt-3 max-w-5xl mx-auto">
           Tim ADAKOM siap membantu menjawab pertanyaan yang belum terjawab.
         </p>
 
         <Button
           variant="primary"
           size="lg"
+          target="_blank"
           href="https://wa.me/6282345600777"
           className="mt-6 inline-flex items-center gap-2"
         >

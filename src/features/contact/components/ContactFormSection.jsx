@@ -10,7 +10,7 @@ const serviceOptions = [
   "Modul Bisnis",
   "Kemitraan F&B",
   "Trading & Komunitas",
-  "Webinar & Workshop",
+  "Webinar & Seminar",
   "Lainnya",
 ];
 

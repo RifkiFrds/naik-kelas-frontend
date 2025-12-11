@@ -19,7 +19,7 @@ function getCTAByType(type) {
 
 /** STATIC TRADING CARD (tidak ambil API) */
 const STATIC_TRADING = {
-  title: "Trading ADAKOM Naik Kelas",
+  title: "TRADING ADAKOM NAIK KELAS",
   description:
     "Compare Your Broker, 1 Goal 1 Spirit. Bangun karier trading yang aman, legal, dan terarah dengan mitra resmi.",
   image: "/images/trading.png", 

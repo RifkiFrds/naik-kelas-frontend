@@ -7,7 +7,7 @@ export default function BusinessCard({ item, i }) {
 
   // Hanya split untuk Jasa Recruitment & Modul Bisnis
   const shouldSplit =
-    item.type === "jasa_recruitment" || item.type === "modal_bisnis";
+    item.type === "jasa_recruitment" || item.type === "modal_bisnis" || item.type === "webinar";
 
   const title = shouldSplit ? splitBusinessTitle(item.judul_bisnis) : item.judul_bisnis;
 
