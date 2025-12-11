@@ -156,7 +156,7 @@ function Navbar() {
             <NavLink to="/events" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">Events</NavLink>
             <NavLink to="/karir" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">Karir</NavLink>
             <NavLink to="/kontak" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">Kontak</NavLink>
-            <NavLink to="/faq" cclassName="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">FAQ</NavLink>
+            <NavLink to="/faq" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">FAQ</NavLink>
           </div>
         </div>
       </div>
