@@ -1,14 +1,12 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
+import CareersSection from '../components/CarrerSection'
 
 function CarrersView() {
   return (
     <>
     <HeroSection />
-
-    <div className='container mt-12'>
-        konten nanti disni
-    </div>
+    <CareersSection />
     </>
   )
 }
