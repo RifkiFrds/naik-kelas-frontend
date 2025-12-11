@@ -16,7 +16,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-sm md:text-base">
-            Semua informasi lengkap mengenai layanan, program, dan ekosistem ADAKOM Naik Kelas tersedia di sini.
+            Semua informasi lengkap mengenai layanan, program, dan ekosistem <br/> ADAKOM Naik Kelas tersedia di sini.
           </p>
         </FadeInUp>
 
