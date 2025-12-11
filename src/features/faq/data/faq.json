@@ -1,0 +1,169 @@
+{
+"faqs": [
+{
+"id": 1,
+"question": "Apa itu ADAKOM Naik Kelas?",
+"answer": "ADAKOM Naik Kelas adalah platform edukasi, pengembangan bisnis, dan professional learning ecosystem yang menyediakan pelatihan, konsultasi, legalitas usaha, coworking space, edukasi trading, dan peluang kemitraan bisnis, termasuk sektor F&B."
+},
+{
+"id": 2,
+"question": "Siapa yang cocok mengikuti program ADAKOM Naik Kelas?",
+"answer": "UMKM, startup, calon entrepreneur, trader pemula, profesional, pelajar, dan perusahaan yang ingin meningkatkan skill tim atau mendapatkan dukungan bisnis."
+},
+{
+"id": 3,
+"question": "Apakah ADAKOM Naik Kelas menyediakan sertifikat?",
+"answer": "Ya. Sertifikat diberikan untuk webinar berbayar, workshop offline, training program, dan modul tertentu."
+},
+{
+"id": 4,
+"question": "Apakah pembayaran program bisa dicicil?",
+"answer": "Untuk saat ini, pembayaran hanya dapat dilakukan melalui transfer bank resmi ADAKOM Naik Kelas; program cicilan belum tersedia."
+},
+{
+"id": 5,
+"question": "Bagaimana cara mendaftar webinar?",
+"answer": "Pendaftaran dilakukan melalui Website resmi ADAKOM Naik Kelas atau WhatsApp Admin. Pendaftaran via DM media sosial tidak diterima."
+},
+{
+"id": 6,
+"question": "Bagaimana cara mendaftar workshop offline?",
+"answer": "Pendaftaran workshop offline dilakukan melalui Website resmi ADAKOM Naik Kelas atau WhatsApp Admin."
+},
+{
+"id": 7,
+"question": "Berapa durasi workshop offline?",
+"answer": "Workshop offline umumnya berlangsung 2–3 jam, tergantung modul dan jumlah peserta."
+},
+{
+"id": 8,
+"question": "Apa perbedaan webinar dan workshop?",
+"answer": "Webinar adalah sesi online (biasanya 1–2 jam) yang fokus pada pemahaman dan teori. Workshop adalah sesi tatap muka (biasanya 2–3 jam) yang fokus pada praktik, tools, dan implementasi."
+},
+{
+"id": 9,
+"question": "Apakah peserta webinar mendapatkan rekaman?",
+"answer": "Ya — peserta terdaftar dan sudah membayar akan mendapatkan akses rekaman apabila rekaman tersedia untuk program tersebut."
+},
+{
+"id": 10,
+"question": "Apakah ada konsultasi gratis?",
+"answer": "Ya. Konsultasi gratis tersedia untuk calon peserta atau bisnis yang ingin memilih program sesuai kebutuhan."
+},
+{
+"id": 11,
+"question": "Apakah ADAKOM Naik Kelas menyediakan layanan legalitas usaha?",
+"answer": "Ya. Layanan legalitas mencakup NIB, PIRT, BPOM, sertifikasi halal, HKI/merek dagang, dan dokumen usaha lain yang relevan. Proses didampingi tim legal dan dilakukan secara resmi sesuai peraturan."
+},
+{
+"id": 12,
+"question": "Apakah ADAKOM Naik Kelas menyediakan layanan recruitment?",
+"answer": "Ya. Tersedia layanan recruitment termasuk screening, interview, dan penyusunan shortlist kandidat untuk perusahaan."
+},
+{
+"id": 13,
+"question": "Apakah coworking space tersedia untuk umum?",
+"answer": "Ya. Coworking space tersedia untuk freelancer, tim, atau perusahaan dengan sistem sewa harian, mingguan, atau bulanan."
+},
+{
+"id": 14,
+"question": "Apakah ADAKOM Naik Kelas memiliki mentoring privat?",
+"answer": "Ya. Beberapa kelas dan paket pelatihan menyediakan sesi mentoring 1-on-1."
+},
+{
+"id": 15,
+"question": "Apakah ada program gratis?",
+"answer": "Terkadang ada program gratis (bersifat seasonal). Informasi update disampaikan melalui WhatsApp Channel dan media sosial resmi."
+},
+{
+"id": 16,
+"question": "Bagaimana cara bergabung ke komunitas ADAKOM Naik Kelas?",
+"answer": "Akses komunitas diberikan otomatis setelah mendaftar program berbayar tertentu; informasi detail disampaikan pada peserta terdaftar."
+},
+{
+"id": 17,
+"question": "Apakah bisa refund jika tidak hadir?",
+"answer": "Kebijakan umum adalah tidak ada refund jika tidak hadir; namun peserta tetap mendapatkan rekaman webinar apabila program menyediakan rekaman."
+},
+{
+"id": 18,
+"question": "Apakah ADAKOM Naik Kelas menyediakan edukasi trading?",
+"answer": "Ya. ADAKOM menyediakan edukasi trading berbasis pengetahuan. Materi bersifat edukatif dan tidak menjanjikan profit."
+},
+{
+"id": 19,
+"question": "Apakah ADAKOM Naik Kelas bekerja sama dengan broker tertentu?",
+"answer": "ADAKOM bekerja sama dengan beberapa broker untuk tujuan edukasi dan dukungan teknis; kerja sama tidak berarti ajakan investasi. Broker mitra dapat berubah dari waktu ke waktu."
+},
+{
+"id": 20,
+"question": "Apakah peserta wajib menggunakan broker tertentu?",
+"answer": "Tidak. Pemilihan broker sepenuhnya keputusan pribadi peserta."
+},
+{
+"id": 21,
+"question": "Apakah trading legal di Indonesia?",
+"answer": "Trading legal apabila dilakukan melalui broker yang terdaftar dan diawasi regulator resmi, misalnya Bappebti untuk produk terkait komoditas berjangka."
+},
+{
+"id": 22,
+"question": "Apakah ADAKOM Naik Kelas mengelola dana atau menawarkan profit sharing?",
+"answer": "Tidak. ADAKOM hanya menyediakan edukasi dan layanan pendukung; tidak mengelola dana klien atau menawarkan skema bagi hasil investasi."
+},
+{
+"id": 23,
+"question": "Apakah ada magang di ADAKOM Naik Kelas?",
+"answer": "Ya. Program magang tersedia untuk divisi seperti marketing, content creator, bisnis, telemarketing, dan administrasi sesuai kebutuhan."
+},
+{
+"id": 24,
+"question": "Bagaimana cara melamar kerja di ADAKOM Naik Kelas?",
+"answer": "Melamar kerja dapat dilakukan melalui halaman Karir di website resmi atau menghubungi WhatsApp Admin sesuai pengumuman posisi terbuka."
+},
+{
+"id": 25,
+"question": "Apakah modul digital memiliki akses seumur hidup?",
+"answer": "Beberapa modul berlabel 'Lifetime Access' memberikan akses seumur hidup; pastikan memeriksa ketentuan pada setiap produk sebelum membeli."
+},
+{
+"id": 26,
+"question": "Apakah ada jadwal kelas rutin?",
+"answer": "Ya. Jadwal diperbarui secara berkala (mingguan) di website dan kanal komunikasi resmi."
+},
+{
+"id": 27,
+"question": "Apakah ada corporate training?",
+"answer": "Ada. Perusahaan dapat request program dan materi pelatihan khusus sesuai kebutuhan organisasi."
+},
+{
+"id": 28,
+"question": "Apakah jadwal kelas bisa diganti setelah daftar?",
+"answer": "Perubahan jadwal dapat dilakukan apabila kuota untuk kelas pengganti tersedia; hubungi admin untuk opsi reschedule."
+},
+{
+"id": 29,
+"question": "Apakah ada benefit membership?",
+"answer": "Ya. Membership tertentu memberikan benefit seperti voucher, prioritas pendaftaran event, dan akses komunitas premium."
+},
+{
+"id": 30,
+"question": "Apakah ADAKOM Naik Kelas menyediakan peluang bisnis franchise atau F&B?",
+"answer": "Ya. Tersedia kemitraan bisnis F&B yang mencakup branding & konsep siap pakai, SOP operasional, pendampingan marketing, dan pelatihan tim."
+},
+{
+"id": 31,
+"question": "Bagaimana cara bergabung sebagai Mitra Bisnis ADAKOM Naik Kelas?",
+"answer": "Calon mitra mengisi formulir kemitraan melalui website atau menghubungi WhatsApp Admin untuk screening awal dan konsultasi bisnis."
+},
+{
+"id": 32,
+"question": "Apa saja layanan legalitas usaha yang tersedia? (Ringkasan)",
+"answer": "Ringkasan layanan legalitas: NIB, PIRT, BPOM, Sertifikasi Halal, HKI/Merek Dagang, dan perizinan usaha lain sesuai kebutuhan industri."
+},
+{
+"id": 33,
+"question": "Disclaimer resmi ADAKOM Naik Kelas",
+"answer": "ADAKOM Naik Kelas bukan penyedia layanan investasi, tidak mengelola dana klien, dan tidak menjanjikan keuntungan finansial. Semua materi edukasi, termasuk trading, bersifat informatif. Keputusan bisnis dan finansial sepenuhnya menjadi tanggung jawab individu."
+}
+]
+}

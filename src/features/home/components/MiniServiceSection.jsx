@@ -4,23 +4,36 @@ import { FadeInUp } from "../../../lib/motion";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
+// =============================
+// TITLE SPLITTER LOCAL FUNCTION
+// =============================
+function splitAdakomTitle(title = "") {
+  if (!title) return "";
+
+  const regex = /ADAKOM\s+NAIK\s+KELAS/i;
+
+  if (regex.test(title)) {
+    return title.replace(regex, match => `\n${match}`);
+  }
+
+  return title;
+}
+
 export default function MiniServiceSection() {
   const { services, loading } = useServiceList();
   const controls = useAnimation();
 
-  // ====== FIX: RESPONSIVE DEVICE CHECK ======
   const [isMobile, setIsMobile] = useState(false);
 
+  // RESPONSIVE CHECK
   useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const checkDevice = () => setIsMobile(window.innerWidth < 768);
     checkDevice();
     window.addEventListener("resize", checkDevice);
     return () => window.removeEventListener("resize", checkDevice);
   }, []);
 
-  // ====== START MARQUEE ONLY ON DESKTOP ======
+  // MARQUEE ANIMATION (DESKTOP ONLY)
   useEffect(() => {
     if (!isMobile) {
       controls.start({
@@ -28,7 +41,7 @@ export default function MiniServiceSection() {
         transition: { repeat: Infinity, duration: 15, ease: "linear" },
       });
     } else {
-      controls.stop(); // HENTIKAN ketika mobile
+      controls.stop();
     }
   }, [controls, isMobile]);
 
@@ -38,16 +51,18 @@ export default function MiniServiceSection() {
     <section className="py-20 bg-[#F0F0F0]">
       <div className="container mx-auto px-6">
 
+        {/* HEADER */}
         <FadeInUp>
           <h2 className="text-2xl md:text-4xl font-bold text-secondary text-center">
             LANGKAH NYATA UNTUK <span className="text-primary">BISNISMU</span> NAIK LEVEL
           </h2>
+
           <p className="text-gray-600 text-center mt-3 max-w-3xl mx-auto">
-            Layanan terpadu kami siap membantu kamu belajar, memulai, dan mengembangkan bisnis dengan lebih cepat & terstruktur.
+            Layanan terpadu kami siap membantu kamu belajar, memulai, dan mengembangkan bisnis secara lebih cepat & terstruktur.
           </p>
         </FadeInUp>
 
-        {/* ====== DESKTOP: AUTO MARQUEE ====== */}
+        {/* DESKTOP MARQUEE */}
         {!isMobile && (
           <motion.div
             className="relative mt-12 overflow-hidden"
@@ -63,7 +78,7 @@ export default function MiniServiceSection() {
               {[...services, ...services].map((item, i) => (
                 <motion.div key={i} className="shrink-0 w-80">
                   <ServiceCard
-                    title={item.title}
+                    title={splitAdakomTitle(item.title)}
                     description={item.description}
                     image={item.image}
                     urlCta={item.urlCta}
@@ -75,13 +90,13 @@ export default function MiniServiceSection() {
           </motion.div>
         )}
 
-        {/* ====== MOBILE: SCROLL MANUAL ====== */}
+        {/* MOBILE SCROLL */}
         {isMobile && (
           <div className="mt-12 flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
             {services.map((item, i) => (
               <div key={i} className="shrink-0 w-[260px] sm:w-72">
                 <ServiceCard
-                  title={item.title}
+                  title={splitAdakomTitle(item.title)}
                   description={item.description}
                   image={item.image}
                   urlCta={item.urlCta}

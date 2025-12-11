@@ -15,9 +15,10 @@ export default function ServiceCard({ title, description, image, urlCta, ctaText
 
       <div className="p-4 md:p-5 flex flex-col h-full">
 
-        <h3 className="text-lg md:text-xl font-semibold text-secondary leading-snug mb-2 line-clamp-2">
-          {title}
-        </h3>
+        <h3 className="text-lg md:text-xl font-semibold text-secondary leading-snug mb-2 whitespace-pre-line">
+  {title}
+</h3>
+
 
         <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-4 line-clamp-3">
           {description}
