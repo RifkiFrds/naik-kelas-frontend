@@ -8,7 +8,9 @@ import BusinessServiceView from "../features/business-services/views/BusinessSer
 import PartnershipView from '../features/partnership/views/PartnershipView';
 import CarrersView from '../features/carrers/views/CarrersView';
 import ScrollToTop from '../utils/ScrollToTop';
-import ContactPage from '../features/contact/views/ContactPage';
+import EventView from '../features/events/views/EventView';
+import ContactView from '../features/contact/views/ContactView';
+import FaqView from '../features/faq/views/FaqView';
 
 export default function index() {
   return (
@@ -22,8 +24,10 @@ export default function index() {
           <Route path="/tentang" element={<AboutView />} />
           <Route path="/kemitraan" element={<PartnershipView />} />
           <Route path="/layanan-umum" element={<PublicServiceView />} />
+          <Route path='/events' element={<EventView />} />
           <Route path="/karir" element={<CarrersView />} />
-          <Route path="/kontak" element={<ContactPage />} />
+          <Route path="/kontak" element={<ContactView />} />
+          <Route path="/faq" element={<FaqView />} />
         </Route>
       </Routes>
     </BrowserRouter>

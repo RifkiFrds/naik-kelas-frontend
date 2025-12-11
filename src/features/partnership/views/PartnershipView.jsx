@@ -1,14 +1,16 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
+import WhyPartnerSection from '../components/WhyPartnerSection'
+import PartnershipSection from '../components/PartnershipSection'
+import PartnershipWorkflowSection from '../components/PartnershipWorkflowSection'
 
 function PartnershipView() {
   return (
     <>
     <HeroSection />
-
-    <div className="container mx-auto px-4 py-12">
-        nanti ada isi lainnya di sini
-    </div>
+    <WhyPartnerSection />
+    <PartnershipSection />
+    <PartnershipWorkflowSection />
     </>
   )
 }

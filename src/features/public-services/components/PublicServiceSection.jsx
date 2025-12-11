@@ -10,7 +10,7 @@ export default function PublicServiceSection() {
   if (loading) return <p className="text-center py-10">Memuat layanan...</p>;
 
   return (
-    <section className="py-14 ">
+    <section className="py-10 ">
       <div className="container mx-auto px-4">
 
         {/* HEADING */}

@@ -103,6 +103,7 @@ function Navbar() {
             <NavLink to="/events" className={linkClass}>Events</NavLink>
             <NavLink to="/karir" className={linkClass}>Karir</NavLink>
             <NavLink to="/kontak" className={linkClass}>Kontak</NavLink>
+            <NavLink to="/faq" className={linkClass}>FAQ</NavLink>
           </nav>
 
           {/* Mobile Menu Button */}
