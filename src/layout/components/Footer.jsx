@@ -15,7 +15,7 @@ function Footer() {
   <div className="container mx-auto px-0 md:px-6 grid grid-cols-1 md:grid-cols-2">
 
     {/* LEFT FULL WHITE AREA (Responsive Padding) */}
-    <div className="bg-white/50 border border-secondary/30 rounded-sm flex items-center justify-center px-6 py-6 md:px-10 md:py-10">
+    <div className="bg-white/20 border border-secondary/30 rounded-sm flex items-center justify-center px-6 py-6 md:px-10 md:py-10">
       <img
         src="/logo.png"
         alt="Adakom Naik Kelas"

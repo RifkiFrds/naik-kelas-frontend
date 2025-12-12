@@ -123,23 +123,28 @@ function Navbar() {
             isMobileMenuOpen ? "max-h-screen opacity-100 pb-4" : "max-h-0 opacity-0"
           }`}
         >
-          <div className="bg-white border-t border-gray-100 pt-4 flex flex-col space-y-2">
+          <div className=" bg-white/50 backdrop-blur-xl shadow-lg
+      border-t border-gray-200
+      rounded-xl mt-3 p-4
+      flex flex-col space-y-3">
             <NavLink to="/" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg" end>Home</NavLink>
             <NavLink to="/tentang" className="px-4 py-2 font-medium text-secondary hover:bg-gray-50 rounded-lg">Tentang Kami</NavLink>
 
             {/* Dropdown Mobile */}
             <div className="px-4 py-2">
               <button
-                className={`flex justify-between items-center w-full font-medium ${isLayananActive ? "text-secondary font-bold" : "text-gray-600"}`}
+                className={`
+                  flex items-center gap-2 w-full font-medium 
+                  ${isLayananActive ? "text-secondary font-bold" : "text-gray-700"}
+                `}
                 onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
               >
-                Layanan
+                <span>Layanan</span>
                 <ChevronDown
                   size={16}
-                  className={`transition-transform duration-300 ${isMobileDropdownOpen ? "rotate-180 text-primary" : ""}`}
+                  className={`transition-transform duration-300 ${isMobileDropdownOpen ? "rotate-180 text-primary" : "text-gray-500"}`}
                 />
               </button>
-
               <div
                 className={`overflow-hidden transition-all duration-300 ${
                   isMobileDropdownOpen ? "max-h-48 opacity-100 mt-2" : "max-h-0 opacity-0"
