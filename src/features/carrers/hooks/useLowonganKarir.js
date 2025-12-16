@@ -9,7 +9,12 @@ export function useLowonganKarir() {
     async function load() {
       try {
         const resp = await getLowonganKarir();
-        setJobs(resp || []);
+
+        const activeJobs = (resp || []).filter(
+          (job) => job.status === "dibuka"
+        );
+
+        setJobs(activeJobs);
       } catch (err) {
         console.error("Error fetching lowongan:", err);
       } finally {

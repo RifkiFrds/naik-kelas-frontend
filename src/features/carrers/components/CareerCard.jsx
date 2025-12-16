@@ -2,6 +2,9 @@ import React from "react";
 import Button from "../../../components/ui/Button";
 
 export default function CareerCard({ job }) {
+
+  if (job.status !== "dibuka") return null;
+
   return (
     <div className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
       <h3 className="text-secondary font-extrabold text-xl mb-2 uppercase">
