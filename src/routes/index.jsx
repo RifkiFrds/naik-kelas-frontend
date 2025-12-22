@@ -9,6 +9,8 @@ import PartnershipView from '../features/partnership/views/PartnershipView';
 import CarrersView from '../features/carrers/views/CarrersView';
 import ScrollToTop from '../utils/ScrollToTop';
 import EventView from '../features/events/views/EventView';
+import ArticleView from '../features/article/views/ArticleView';
+import ArticleDetailView from "../features/article/views/ArticleDetailView";
 import ContactView from '../features/contact/views/ContactView';
 import FaqView from '../features/faq/views/FaqView';
 
@@ -25,6 +27,8 @@ export default function index() {
           <Route path="/kemitraan" element={<PartnershipView />} />
           <Route path="/layanan-umum" element={<PublicServiceView />} />
           <Route path='/events' element={<EventView />} />
+          <Route path="/artikel" element={<ArticleView />} />
+          <Route path="/artikel/:slug" element={<ArticleDetailView />} />
           <Route path="/karir" element={<CarrersView />} />
           <Route path="/kontak" element={<ContactView />} />
           <Route path="/faq" element={<FaqView />} />

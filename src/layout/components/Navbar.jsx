@@ -101,6 +101,7 @@ function Navbar() {
             </div>
 
             <NavLink to="/events" className={linkClass}>Events</NavLink>
+            <NavLink to="/artikel" className={linkClass}>Artikel</NavLink>
             <NavLink to="/karir" className={linkClass}>Karir</NavLink>
             <NavLink to="/kontak" className={linkClass}>Kontak</NavLink>
             <NavLink to="/faq" className={linkClass}>FAQ</NavLink>

@@ -2,7 +2,7 @@ import React from "react";
 import { usePublicService } from "../hooks/usePublicService";
 import { RevealOnScroll } from "../../../lib/motion";
 import PublicServiceCard from "./PublicServiceCard";
-import PublicServiceBanner from "./PublicServiceBanner";
+import ServiceBanner from "../../../components/ServiceBanner";
 
 export default function PublicServiceSection() {
   const { services, loading } = usePublicService();
@@ -38,7 +38,7 @@ export default function PublicServiceSection() {
 
         {/* CTA BANNER */}
         <RevealOnScroll direction="up" delay={0.3}>
-          <PublicServiceBanner />
+          <ServiceBanner />
         </RevealOnScroll>
       </div>
     </section>

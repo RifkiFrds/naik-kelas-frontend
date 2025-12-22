@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PublicServiceBanner() {
+export default function ServiceBanner() {
   return (
     <div className="mt-10 md:mt-14 bg-secondary text-white rounded-xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
       <div>
