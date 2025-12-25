@@ -34,7 +34,7 @@ export default function ArticleListView() {
                   <ArticleCard key={item.id} article={item} /> //
                 ))
               ) : (
-                <p className="text-gray-400 text-center col-span-full">Artikel tidak ditemukan.</p>
+                console.log('No articles found')
               )}
             </div>
           </div>
