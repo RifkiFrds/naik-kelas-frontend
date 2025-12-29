@@ -3,7 +3,7 @@ import { Calendar, Lightbulb, Share2, ArrowLeft, Check } from "lucide-react";
 import { useState } from "react";
 import { useArticleDetail } from "../hooks/useArticleDetail";
 import { FadeInUp, RevealOnScroll } from "../../../lib/motion";
-import ServiceBanner from "../../../components/ServiceBanner";
+import ServiceBanner from "../components/SeviceBanner";
 import Button from "../../../components/ui/Button"
 
 export default function ArticleDetailView() {
