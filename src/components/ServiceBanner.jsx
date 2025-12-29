@@ -4,12 +4,12 @@ export default function ServiceBanner() {
   return (
     <div className="mt-10 md:mt-14 bg-secondary text-white rounded-xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
       <div>
-        <h3 className="text-xl md:text-2xl font-extrabold">
+        <h3 className="text-xl md:text-3xl font-extrabold">
           Butuh Bantuan Lain? Konsultasi GRATIS!
         </h3>
-        <p className="text-gray-200 text-sm md:text-base mt-1 max-w-lg">
+        <p className="text-gray-200 text-sm md:text-base mt-1 max-w-xl">
           Kamu bisa tanya apa saja terkait perizinan, desain, marketing, hingga pengembangan bisnis. 
-          Tim Naik Kelas siap membantu.
+          Tim ADAKOM Naik Kelas siap membantu.
         </p>
       </div>
 
