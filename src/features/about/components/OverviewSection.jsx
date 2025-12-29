@@ -52,10 +52,10 @@ export default function OverviewSection() {
             </p>
 
             <div className="space-y-4 font-semibold">
-              <ValueItem text="Inovasi: selalu mencari cara baru untuk membuat bisnis lebih efisien." />
+              <ValueItem text="Inovasi: selalu mencari cara baru untuk bisnis lebih efisien." />
               <ValueItem text="Kolaborasi: kami percaya sukses tercipta bersama, bukan sendiri." />
-              <ValueItem text="Profesionalisme: jujur, transparan, dan konsisten membantu pengguna." />
-              <ValueItem text="Pertumbuhan: terus belajar, berkembang, dan beradaptasi dengan zaman." />
+              <ValueItem text="Profesional: jujur, transparan, dan konsisten membantu pengguna." />
+              <ValueItem text="Pertumbuhan: selalu belajar, dan beradaptasi dengan zaman." />
             </div>
           </div>
 

@@ -5,12 +5,10 @@ import SuccessModal from "./SuccessModal";
 import { FadeInUp } from "../../../lib/motion/index";
 
 const serviceOptions = [
-  "Konsultasi Bisnis",
+  "Trading",
   "Legalitas & Sertifikasi",
-  "Modul Bisnis",
+  "Coworking Space",
   "Kemitraan F&B",
-  "Trading & Komunitas",
-  "Webinar & Seminar",
   "Lainnya",
 ];
 

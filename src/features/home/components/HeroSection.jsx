@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../../../components/ui/Button';
 import { FadeInUp } from '../../../lib/motion';
-import { NavLink } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -27,13 +26,6 @@ function HeroSection() {
               <Button href="https://wa.me/6282345600777?text=Halo%20saya%20ingin%20konsultasi" target="_blank" variant="primary" size="lg" className="flex items-center justify-center gap-2">
                 Konsultasi Gratis Sekarang
               </Button>
-
-              {/* Tombol Secondary */}
-              <NavLink to="/layanan-bisnis">
-              <Button variant="secondary" size="lg">
-                Beli Modul Bisnis
-              </Button>
-              </NavLink>
             </div>
           </div>
 

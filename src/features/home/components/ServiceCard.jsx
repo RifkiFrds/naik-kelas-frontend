@@ -25,7 +25,6 @@ export default function ServiceCard({ title, description, image, urlCta, ctaText
 
         <a
           href={urlCta}
-          target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 justify-between bg-primary px-4 py-2.5 rounded-lg text-secondary font-medium hover:brightness-110 transition-all w-full"
         >

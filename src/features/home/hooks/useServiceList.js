@@ -24,7 +24,7 @@ const STATIC_TRADING = {
     "Compare Your Broker, 1 Goal 1 Spirit. Bangun karier trading yang aman, legal, dan terarah dengan mitra resmi.",
   image: "/images/trading.png", 
   urlCta:
-    "https://wa.me/6282345600777?text=Halo%20saya%20ingin%20membuka%20akun%20trading",
+    "https://adakomnaikkelas.com/kontak",
   ctaText: "Buka Akun Sekarang",
 };
 
