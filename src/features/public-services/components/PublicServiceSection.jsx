@@ -15,12 +15,17 @@ export default function PublicServiceSection() {
 
         {/* HEADING */}
         <RevealOnScroll direction="up">
-          <h2 className="text-center text-2xl md:text-5xl font-bold text-secondary leading-tight mb-2">
-            SOLUSI <span className="text-primary">LENGKAP</span> UNTUK MENDUKUNG
-          </h2>
-          <h2 className="text-center text-2xl md:text-5xl font-extrabold text-secondary leading-tight">
-            SEMUA ASPEK <span className="text-primary">PERTUMBUHAN BISNIS</span> ANDA
-          </h2>
+        <h2 className="
+          text-center
+          text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+          font-bold
+          text-secondary
+          leading-snug sm:leading-tight md:leading-[1.35]
+          mb-4 sm:mb-6
+        ">
+          SOLUSI <span className="text-primary">LENGKAP</span> UNTUK MENDUKUNG SEMUA ASPEK{" "}
+          <span className="text-primary">PERTUMBUHAN BISNIS</span> ANDA
+        </h2>
         </RevealOnScroll>
 
         {/* LIST CARDS */}

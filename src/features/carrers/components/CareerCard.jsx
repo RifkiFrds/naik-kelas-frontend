@@ -7,7 +7,7 @@ export default function CareerCard({ job }) {
 
   return (
     <div className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
-      <h3 className="text-secondary font-extrabold text-xl mb-2 uppercase">
+      <h3 className="text-secondary font-bold text-xl mb-2 uppercase">
         {job.posisi}
       </h3>
 

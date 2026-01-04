@@ -13,7 +13,7 @@ export default function HeroSection() {
           {/* LEFT – TEXT */}
           <div className="text-center md:text-left">
 
-            <h1 className="text-3xl md:text-4xl max-w-xl font-bold text-secondary leading-[1.15] md:leading-[1.4]">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl font-bold text-secondary leading-[1.15] md:leading-[1.4]">
               BUKA BISNIS KULINER DENGAN
               <br />
               <span className="text-primary">SISTEM SIAP PAKAI!</span>

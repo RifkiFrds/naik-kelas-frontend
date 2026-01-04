@@ -63,7 +63,7 @@ export default function ContactFormSection() {
 
           {/* LEFT INFO */}
           <div className="space-y-5">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-secondary leading-tight">
               TERHUBUNG DENGAN TIM 
               <span className="text-primary"> ADAKOM NAIK KELAS</span>
             </h1>

@@ -27,7 +27,11 @@ function HeroSection() {
         
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          BERSAMA <span className='text-primary'>ADAKOM NAIK KELAS</span>
+          BERSAMA{" "}
+          <span className="text-primary">
+            <br className="block sm:hidden" />
+            ADAKOM NAIK KELAS
+          </span>
         </h1>
 
         {/* Subtext / Deskripsi */}

@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 text-center">
 
         <FadeInUp>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl leading-[1.25] md:leading-[1.4] font-bold text-secondary leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl leading-[1.25] md:leading-[1.4] font-bold text-secondary">
             PERTANYAAN YANG SERING
             <br />
             <span className="text-primary">DIAJUKAN (FAQ)</span>

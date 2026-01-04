@@ -14,7 +14,7 @@ export default function CareersSection() {
       <div className="container mx-auto px-4">
 
         {/* Heading */}
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold text-secondary mb-2">
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-secondary mb-2">
           PELUANG KARIER YANG SEDANG DIBUKA
         </h2>
 
