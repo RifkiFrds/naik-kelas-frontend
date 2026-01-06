@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { getArticles } from "../services/articleService";
 
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 5;
 
 export function useArticles() {
   const [articles, setArticles] = useState([]);
