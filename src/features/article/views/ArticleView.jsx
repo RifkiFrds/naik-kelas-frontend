@@ -1,9 +1,9 @@
-// article/views/ArticleView.jsx
 import HeroSection from "../components/HeroSection";
 import ArticleFilterBar from "../components/ArticleFilterBar";
 import ArticleCard from "../components/ArticleCard";
 import HeadlineArticle from "../components/HeadlineArticle";
 import { useArticles } from "../hooks/useArticles";
+import Button  from "../../../components/ui/Button";
 
 export default function ArticleListView() {
   const { articles, loading, search, setSearch, hasMore, loadMore } = useArticles(); //
@@ -27,11 +27,11 @@ export default function ArticleListView() {
             {/* Headline Section */}
             {showHeadline && <HeadlineArticle article={headlineData} />}
 
-            {/* Grid Artikel Reguler - 2 Kolom sesuai gambar */}
+            {/* Grid Artikel Reguler */}
             <div className="mt-16 grid md:grid-cols-2 gap-x-12 gap-y-16">
               {displayArticles.length ? (
                 displayArticles.map((item) => (
-                  <ArticleCard key={item.id} article={item} /> //
+                  <ArticleCard key={item.id} article={item} />
                 ))
               ) : (
                 console.log('No articles found')
@@ -42,12 +42,12 @@ export default function ArticleListView() {
 
         {hasMore && (
           <div className="mt-20 text-center">
-            <button
+            <Button
               onClick={loadMore}
-              className="px-8 py-2 rounded-lg border border-gray-300 text-gray-600 text-sm font-medium hover:bg-gray-50 transition"
+              className="px-8 py-2 text-gray-600 text-sm font-medium  transition"
             >
               Muat lebih banyak
-            </button>
+            </Button>
           </div>
         )}
       </section>

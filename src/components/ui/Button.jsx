@@ -6,10 +6,22 @@ function Button({
   size = 'md',
   rounded = 'md',
   className = '',
-  href,         
+  href,
+
+  // event handlers (explicit)
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
+  onFocus,
+  onBlur,
+
+  // state
+  disabled = false,
+  loading = false,
+
+  type = 'button',
   ...props
 }) {
-  
   const baseStyles =
     'inline-flex items-center justify-center font-semibold shadow-md transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
@@ -35,29 +47,49 @@ function Button({
       'bg-secondary text-gray-100 hover:bg-[#0A1A4A] active:brightness-90 focus:ring-secondary',
   };
 
-  const variantStyles = variants[variant] || variants.primary;
-  const sizeStyles = sizes[size] || sizes.md;
-  const roundedStyles = roundness[rounded] || roundness.md;
+  const finalClass = `
+    ${baseStyles}
+    ${sizes[size] || sizes.md}
+    ${roundness[rounded] || roundness.md}
+    ${variants[variant] || variants.primary}
+    ${className}
+  `;
 
-  const finalClass = `${baseStyles} ${sizeStyles} ${roundedStyles} ${variantStyles} ${className}`;
+  const content = loading ? 'Loading...' : children;
 
-  // Jika ada `href` → render <a>
+  // Render <a>
   if (href) {
     return (
       <a
         href={href}
         className={finalClass}
+        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        aria-disabled={disabled || loading}
         {...props}
       >
-        {children}
+        {content}
       </a>
     );
   }
 
-  // Jika tidak ada href → render <button>
+  // Render <button>
   return (
-    <button className={finalClass} {...props}>
-      {children}
+    <button
+      type={type}
+      className={finalClass}
+      disabled={disabled || loading}
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      {...props}
+    >
+      {content}
     </button>
   );
 }
